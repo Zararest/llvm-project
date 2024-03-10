@@ -86,7 +86,7 @@ StringRef Triple::getArchTypeName(ArchType Kind) {
   case x86_64:         return "x86_64";
   case xcore:          return "xcore";
   case xtensa:         return "xtensa";
-  case arch47:         return "arch47"
+  case arch47:         return "arch47";
   }
 
   llvm_unreachable("Invalid ArchType!");
@@ -1681,6 +1681,7 @@ Triple Triple::get64BitArchVariant() const {
   case Triple::ve:
   case Triple::wasm64:
   case Triple::x86_64:
+  case Triple::arch47:
     // Already 64-bit.
     break;
 

@@ -1,0 +1,12 @@
+#ifndef LLVM_LIB_TARGET_ARCH47_TARGETINFO_ARCH47TARGETINFO_H
+#define LLVM_LIB_TARGET_ARCH47_TARGETINFO_ARCH47TARGETINFO_H
+
+namespace llvm {
+
+class Target;
+
+Target &getTheArch47Target();
+
+} // namespace llvm
+
+#endif // LLVM_LIB_TARGET_ARCH47_TARGETINFO_ARCH47TARGETINFO_H
